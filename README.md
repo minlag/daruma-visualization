@@ -2,7 +2,7 @@
 
 Tools to create animated visualizations of the various LED driver waveforms from my [daruma](https://github.com/minlav/daruma) project. Includes example input .csv and output .gif files.
 
-<img src="https://github.com/minlav/daruma-visualization/blob/main/Sin8.gif" width=40% height=40%> 
+<img src="https://github.com/minlav/daruma-visualization/blob/main/Sin8.gif" width=40% height=40%> <img src="https://github.com/minlav/daruma-visualization/blob/main/Sin8_Gamma.gif" width=40% height=40%>
 
 ## Motivations
 
