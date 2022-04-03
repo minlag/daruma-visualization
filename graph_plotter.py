@@ -10,10 +10,11 @@ plt.style.use('dark_background')
 
 # set params
 CSV_TITLE = "Sin8.csv"
-PLOT_TITLE = "8-Bit Sine Without Gamma"
+PLOT_TITLE = "8-Bit Sine"
 FILE_NAME = "Sin8.gif"
 SCROLL_SPEED = 5
 LOG_SCALE = False
+SIZE = 480 # length of x-axis in pixels
 plt.rcParams.update({'font.family':'Helvetica Neue LT Std'})
 
 # axis data
@@ -67,4 +68,5 @@ anim = FuncAnimation(fig, animate, init_func = init,
 
 # plt.show()
 
-anim.save(FILE_NAME, writer='imagemagick',  dpi= 100)
+SIZE = SIZE * ( 100 / 640 ) # convert SIZE into width in pixels
+anim.save(FILE_NAME, writer='ffmpeg',  dpi= SIZE)
